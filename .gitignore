@@ -1,0 +1,8 @@
+# ignore SASS
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
+
+# Ignore Mac system files
+.DS_store
