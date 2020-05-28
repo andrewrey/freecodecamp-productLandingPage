@@ -5,7 +5,6 @@
 .mainWrap{
     width: 90%;
     margin: 0 auto;
-    border: 1px solid red;
 }
 
 h1{
@@ -57,7 +56,6 @@ iframe{
     }
     img{
         width: 100%;
-        height: 90%;
         display: block;
         margin-bottom: 15px;
         @media(min-width: 768px){
@@ -66,4 +64,8 @@ iframe{
             
         }
     }
+}
+
+br{
+    border: 1px solid black;
 }
