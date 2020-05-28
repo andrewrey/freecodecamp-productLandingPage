@@ -20,7 +20,7 @@ header{
     background-color: pink;
     figure{
         margin: 0;
-        margin-left: 25px;
+        margin-left: 45px;
         width: 100px;
     }
     img{
@@ -28,6 +28,8 @@ header{
         height: auto;
         display: block;
         border-radius: 50%;
+        border: 5px solid gold;
+        box-shadow: 2px 2px 5px black;
     }
 
     ul{
