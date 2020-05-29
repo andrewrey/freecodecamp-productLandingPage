@@ -13,6 +13,7 @@ footer{
 .mainWrap{
     width: 90%;
     margin: 0 auto;
+    border: 1px solid black;
 }
 
 h1{
@@ -77,3 +78,20 @@ iframe{
     }
 }
 
+
+.fishingHead{
+    text-align: center;
+    background-image: url('../img/fish-net.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    h2{
+        font-size: 2.5rem;
+        background-color: rgba(255,255, 255, .6);
+        display: inline-block;
+        border-radius: 10px;
+        padding: 0 20px;
+        box-shadow: 2px 2px 4px black;
+    }
+}
