@@ -101,11 +101,21 @@ iframe{
     width: 100%;
     margin: 0 auto;
     
+    .colTextWrap{
+        @media(min-width: 768px){
+            text-align: center;
+        }
+    }
+
     .col{
         width: 100%;
         @media(min-width: 768px){
+            margin: 8px;
             width: 45%;
             display: inline-block;
+            vertical-align: top;
+            text-align: justify;
+
         }
     }
     p{
