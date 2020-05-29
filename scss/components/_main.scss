@@ -95,3 +95,20 @@ iframe{
         box-shadow: 2px 2px 4px black;
     }
 }
+
+
+.ourFishing{
+    width: 100%;
+    margin: 0 auto;
+    
+    .col{
+        width: 100%;
+        @media(min-width: 768px){
+            width: 45%;
+            display: inline-block;
+        }
+    }
+    p{
+        line-height: 1.5;
+    }
+}

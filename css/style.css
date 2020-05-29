@@ -173,6 +173,23 @@ iframe {
   box-shadow: 2px 2px 4px black;
 }
 
+.ourFishing {
+  width: 100%;
+  margin: 0 auto;
+}
+.ourFishing .col {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .ourFishing .col {
+    width: 45%;
+    display: inline-block;
+  }
+}
+.ourFishing p {
+  line-height: 1.5;
+}
+
 /* ============================================= */
 /*              Footer Styling                   */
 /* ============================================= */
