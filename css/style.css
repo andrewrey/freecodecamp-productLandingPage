@@ -15,6 +15,12 @@
 /*            Header Styling                     */
 /* ============================================= */
 header {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
   height: 120px;
   background-color: pink;
 }
@@ -67,6 +73,12 @@ header li a {
 /* ============================================= */
 /*              Main Styling                     */
 /* ============================================= */
+main,
+footer {
+  position: relative;
+  top: 120px;
+}
+
 .mainWrap {
   width: 90%;
   margin: 0 auto;
@@ -75,6 +87,9 @@ header li a {
 h1 {
   text-align: center;
   font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 25px;
+  padding-top: 20px;
 }
 
 .videoWrap {
@@ -134,10 +149,6 @@ iframe {
     width: 45%;
     display: inline;
   }
-}
-
-br {
-  border: 1px solid black;
 }
 
 /* ============================================= */
