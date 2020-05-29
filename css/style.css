@@ -178,6 +178,14 @@ iframe {
   margin: 0 auto;
 }
 @media (min-width: 768px) {
+  .ourFishing {
+    width: 80%;
+  }
+}
+.ourFishing .colTextWrap {
+  margin-bottom: 25px;
+}
+@media (min-width: 768px) {
   .ourFishing .colTextWrap {
     text-align: center;
   }
@@ -196,6 +204,11 @@ iframe {
 }
 .ourFishing p {
   line-height: 1.5;
+}
+.ourFishing img {
+  margin: 0 auto;
+  display: block;
+  width: 70%;
 }
 
 /* ============================================= */
