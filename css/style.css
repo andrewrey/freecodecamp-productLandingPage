@@ -20,7 +20,7 @@ body {
 /* ============================================= */
 #header {
   position: fixed;
-  z-index: 1;
+  z-index: 5;
   top: 0;
   left: 0;
   width: 100%;
@@ -228,6 +228,13 @@ iframe {
   right: 0;
   background-color: lightblue;
   opacity: 0.9;
+  z-index: 0;
+}
+
+.module {
+  border: 2px solid black;
+  min-height: 300px;
+  background-color: lightsalmon;
 }
 
 /* ============================================= */
