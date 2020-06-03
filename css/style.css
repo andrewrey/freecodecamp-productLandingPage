@@ -233,8 +233,31 @@ iframe {
 
 .module {
   border: 2px solid black;
+  padding: 5px;
   min-height: 300px;
+  width: 150px;
   background-color: lightsalmon;
+}
+.module .modImage {
+  width: 90%;
+  margin: 0 auto;
+}
+.module .modImage img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+.module h4,
+.module p {
+  margin: 0;
+}
+.module h4 {
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+.module p {
+  margin-bottom: 5px;
 }
 
 /* ============================================= */
