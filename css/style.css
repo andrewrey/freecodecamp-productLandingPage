@@ -218,6 +218,7 @@ iframe {
 
 .overlay {
   position: absolute;
+  display: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -233,6 +234,7 @@ iframe {
 
 .module {
   border: 2px solid black;
+  border-radius: 5px;
   padding: 5px;
   min-height: 300px;
   width: 150px;
@@ -246,7 +248,9 @@ iframe {
   width: 100%;
   height: auto;
   display: block;
+  border: 1px solid;
   border-radius: 10px;
+  box-shadow: 2px 2px 2px black;
 }
 .module h4,
 .module p {
