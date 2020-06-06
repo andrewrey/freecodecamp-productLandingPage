@@ -165,6 +165,27 @@ iframe{
     }
 }
 
+
+
+.product {
+    width: 150px;
+    .modImage{
+        width: 90%;
+        margin: 0 auto;
+        
+        img{
+            width: 100%;
+            height: auto;
+            display: block;
+            border: 1px solid;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px black;
+        }
+    }
+}
+
+
+
 .module{
     border: 2px solid black;
     border-radius: 5px;
