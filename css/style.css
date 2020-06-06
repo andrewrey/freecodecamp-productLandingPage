@@ -213,7 +213,7 @@ iframe {
 
 #products {
   position: relative;
-  min-height: 400px;
+  min-height: 200px;
 }
 #products h2 {
   margin: 0 auto;
@@ -223,6 +223,12 @@ iframe {
   #products h2 {
     width: 80%;
   }
+}
+
+.productsWrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .overlay {
@@ -247,6 +253,12 @@ iframe {
 
 .product {
   width: 150px;
+  text-align: center;
+  border: 2px solid purple;
+  background-color: palevioletred;
+  border-radius: 10px;
+  padding-bottom: 25px;
+  margin-bottom: 20px;
 }
 .product .modImage {
   width: 90%;
@@ -254,7 +266,7 @@ iframe {
 }
 .product .modImage img {
   width: 100%;
-  height: auto;
+  height: 88px;
   display: block;
   border: 1px solid;
   border-radius: 10px;
