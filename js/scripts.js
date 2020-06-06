@@ -24,7 +24,7 @@ function productCards(item, index){
 
 // Overlay Module Template
 
-{/* 
+/* 
 <div class="module">
     <h3>Fish Type</h3>
     <figure class="modImage">
@@ -36,7 +36,7 @@ function productCards(item, index){
     <p>Awesome fish, great for BBQ</p>
 </div> 
 
-*/}
+*/
 
 
 

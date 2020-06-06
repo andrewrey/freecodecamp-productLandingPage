@@ -3,7 +3,6 @@
 /* ============================================= */
 
 
-
 main,
 footer{
     position: relative;
@@ -152,9 +151,9 @@ iframe{
 }
 
 .overlay{
-    position: absolute;
-    display: none;
-    top: 0;
+    position: fixed;
+    top:calc(0vh + 120px);
+    // display: none;
     bottom: 0;
     left: 0;
     right: 0;
