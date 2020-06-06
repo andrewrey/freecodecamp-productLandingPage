@@ -1,9 +1,7 @@
 // Page Elements//
 
 const products = document.querySelector('.productsWrap');
-
-
-
+const overLay = document.querySelector('.overlay');
 
 // functions for producing product Card and Module Cards
 
@@ -27,7 +25,7 @@ function productCards(item, index){
 /* 
 <div class="module">
     <h3>Fish Type</h3>
-    <figure class="modImage">
+    <figure class="overLayImage">
         <img src="img/catch-fish-fish-market-fishing-229789.jpg" alt="fish photo">
     </figure>
     <h4>Price:</h4>
@@ -38,7 +36,9 @@ function productCards(item, index){
 
 */
 
+function productModuleOverlayCreator(){
 
+}
 
 // product Object /// 
 
@@ -70,3 +70,17 @@ const productsList = [
 ]
 
 productsList.forEach((item,index)=>productCards(item,index));
+
+
+
+// Event Listeners ///
+
+products.addEventListener('click', e =>{
+    let element = e.target;
+    if(element.tagName === 'IMG'){
+        let parent = element.parentNode.parentNode;
+        let parentIndex = parent.getAttribute('data-index');
+        console.log(parentIndex);
+        overLay.classList.remove('hidden');
+    }
+} );

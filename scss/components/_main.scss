@@ -137,6 +137,7 @@ iframe{
     min-height: 200px;
     h2{
         margin: 0 auto;
+        margin-bottom: 50px;
         @media(min-width: 768px){
             width: 80%;
         }
@@ -150,10 +151,15 @@ iframe{
     justify-content: space-around;
 }
 
+
+
+.hidden{
+    display: none;
+}
+
 .overlay{
     position: fixed;
     top:calc(0vh + 120px);
-    // display: none;
     bottom: 0;
     left: 0;
     right: 0;
@@ -183,6 +189,7 @@ iframe{
     .modImage{
         width: 90%;
         margin: 0 auto;
+        cursor: pointer;
         
         img{
             width: 100%;
@@ -204,7 +211,7 @@ iframe{
     min-height: 300px;
     width: 150px;
     background-color: lightsalmon;
-    .modImage{
+    .overlayImage{
         width: 90%;
         margin: 0 auto;
         
