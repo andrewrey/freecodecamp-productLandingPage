@@ -2,6 +2,7 @@
 
 const products = document.querySelector('.productsWrap');
 const overLay = document.querySelector('.overlay');
+const moduleWrap = document.querySelector('.modulesWrap');
 
 // functions for producing product Card and Module Cards
 
@@ -36,7 +37,24 @@ function productCards(item, index){
 
 */
 
-function productModuleOverlayCreator(){
+function productModuleOverlayCreator(index){
+    let {name,image,price,desc} = productsList[index];
+    let html = `
+        <div class="module">
+            <div class="close">
+                <span>&times<span>
+            </div>
+            <h3>${name}</h3>
+            <figure class="overlayImage">
+                <img src="${image}" alt="${name}">
+            </figure>
+            <h4>Price:</h4>
+            <p>${price}</p>
+            <h4>Description:</h4>
+            <p>${desc}</p>
+        </div> 
+    `;
+    return html;
 
 }
 
@@ -44,25 +62,25 @@ function productModuleOverlayCreator(){
 
 const productsList = [
     {
-        name: "big fish",
+        name: "Big Fish",
         image: "img/skeletonFish.jpg",
         price: "$3.00/pds", 
         desc: "Great when you're having guests over for dinner"
     },
     {
-        name: "awesome fish",
+        name: "Awesome Fish",
         image: "img/fish1.jpg",
         price: "$5.50/pds", 
         desc: "For the price you get an amazing taste which you can enjoy"
     },
     {
-        name: "expensive fish",
+        name: "Expensive Fish",
         image: "img/fish2.jpg",
         price: "$15.00/pds", 
         desc: "For those special nights"
     },
     {
-        name: "wonderful fish",
+        name: "Wonderful Fish",
         image: "img/fish3.jpg",
         price: "$12.99/pds", 
         desc: "When you feel like treating yourself to something great"
@@ -80,7 +98,7 @@ products.addEventListener('click', e =>{
     if(element.tagName === 'IMG'){
         let parent = element.parentNode.parentNode;
         let parentIndex = parent.getAttribute('data-index');
-        console.log(parentIndex);
         overLay.classList.remove('hidden');
+        moduleWrap.innerHTML = productModuleOverlayCreator(parentIndex);
     }
 } );

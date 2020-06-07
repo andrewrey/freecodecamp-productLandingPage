@@ -163,8 +163,7 @@ iframe{
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: lightblue;
-    opacity: .9;
+    background-color: rgba(173,216,230,.9);
     z-index: 0;
     .modulesWrap{
         display: flex;
@@ -205,12 +204,21 @@ iframe{
 
 
 .module{
+    position: relative;
+    .close{
+        position: absolute;
+        top: -25px;
+        right: -25px;
+        font-size: 1.7rem;
+        color: rgba(49, 53, 56,.5);
+    }
     border: 2px solid black;
     border-radius: 5px;
+    box-shadow: 2px 2px 5px rgb(58, 57, 57);
     padding: 5px;
     min-height: 300px;
     width: 150px;
-    background-color: lightsalmon;
+    background-color: rgba(255,173, 137,1);
     .overlayImage{
         width: 90%;
         margin: 0 auto;
