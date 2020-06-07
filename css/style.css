@@ -152,7 +152,7 @@ iframe {
 @media (min-width: 768px) {
   .aboutArticle img {
     width: 45%;
-    display: inline;
+    display: inline-block;
   }
 }
 
