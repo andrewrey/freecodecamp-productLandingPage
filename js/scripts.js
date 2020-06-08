@@ -102,3 +102,11 @@ products.addEventListener('click', e =>{
         moduleWrap.innerHTML = productModuleOverlayCreator(parentIndex);
     }
 } );
+
+
+moduleWrap.addEventListener('click', e => {
+    console.log(e.target);
+    if(e.target.tagName === 'SPAN'){
+        overLay.classList.add('hidden');
+    }
+});

@@ -207,6 +207,7 @@ iframe{
     position: relative;
     .close{
         position: absolute;
+        cursor: pointer;
         top: -25px;
         right: -25px;
         font-size: 1.7rem;
