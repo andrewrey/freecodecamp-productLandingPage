@@ -287,6 +287,19 @@ iframe {
   width: 150px;
   background-color: #ffad89;
 }
+.module .rArrow,
+.module .lArrow {
+  position: absolute;
+  top: calc(50% - 23px);
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+.module .lArrow {
+  left: -30px;
+}
+.module .rArrow {
+  right: -30px;
+}
 .module .close {
   position: absolute;
   cursor: pointer;

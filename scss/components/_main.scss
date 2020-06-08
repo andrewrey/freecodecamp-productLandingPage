@@ -205,6 +205,19 @@ iframe{
 
 .module{
     position: relative;
+    .rArrow,
+    .lArrow {
+        position: absolute;
+        top: calc(50% - 23px);
+        font-size: 2.5rem;
+        cursor: pointer;
+    }
+    .lArrow{
+        left: -30px;
+    }
+    .rArrow{
+        right: -30px;
+    }
     .close{
         position: absolute;
         cursor: pointer;

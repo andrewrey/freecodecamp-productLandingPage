@@ -52,6 +52,13 @@ function productModuleOverlayCreator(index){
             <p>${price}</p>
             <h4>Description:</h4>
             <p>${desc}</p>
+            <div class="rArrow">
+                <p>&#187</p>
+            </div>
+            <div class="lArrow">
+                <p>&#171</p>
+            </div>
+            
         </div> 
     `;
     return html;
