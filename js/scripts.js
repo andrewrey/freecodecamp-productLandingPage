@@ -8,7 +8,7 @@ const moduleWrap = document.querySelector('.modulesWrap');
 
 function productCards(item, index){
     let HTML = `
-        <div class="product" data-index=${index}>
+        <div class="product" data-index="${index}">
             <h3>${item.name}</h3>
             <figure class="modImage">
                 <img src=${item.image} alt=${item.name}>
@@ -40,7 +40,7 @@ function productCards(item, index){
 function productModuleOverlayCreator(index){
     let {name,image,price,desc} = productsList[index];
     let html = `
-        <div class="module">
+        <div class="module" data-index="${index}">
             <div class="close">
                 <span>&times<span>
             </div>
@@ -53,10 +53,10 @@ function productModuleOverlayCreator(index){
             <h4>Description:</h4>
             <p>${desc}</p>
             <div class="rArrow">
-                <p>&#187</p>
+                <p class="right">&#187</p>
             </div>
             <div class="lArrow">
-                <p>&#171</p>
+                <p class="left">&#171</p>
             </div>
             
         </div> 
@@ -112,8 +112,23 @@ products.addEventListener('click', e =>{
 
 
 moduleWrap.addEventListener('click', e => {
-    console.log(e.target);
     if(e.target.tagName === 'SPAN'){
         overLay.classList.add('hidden');
     }
+    if(e.target.className === 'left'){
+        let parentElement = e.target.parentNode.parentNode;
+        let parentIndex = parseInt(parentElement.getAttribute('data-index'));
+        if(parentIndex - 1 >= 0){
+            moduleWrap.innerHTML = productModuleOverlayCreator(parentIndex - 1);
+        }
+    }
+    if(e.target.className === 'right'){
+        let parentElement = e.target.parentNode.parentNode;
+        let parentIndex = parseInt(parentElement.getAttribute('data-index'));
+        console.log(productsList.length);
+        if(parentIndex + 1 < productsList.length){
+            moduleWrap.innerHTML = productModuleOverlayCreator(parentIndex + 1);
+        }
+    }
 });
+
