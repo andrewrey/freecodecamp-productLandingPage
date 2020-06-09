@@ -283,7 +283,7 @@ iframe {
   border-radius: 5px;
   box-shadow: 2px 2px 5px #3a3939;
   padding: 5px;
-  min-height: 300px;
+  min-height: 350px;
   width: 150px;
   background-color: #ffad89;
 }
@@ -314,7 +314,7 @@ iframe {
 }
 .module .overlayImage img {
   width: 100%;
-  height: auto;
+  height: 88px;
   display: block;
   border: 1px solid;
   border-radius: 10px;
