@@ -339,6 +339,9 @@ iframe {
 .contactWrap {
   margin: 0 auto;
 }
+.contactWrap h2 {
+  text-align: center;
+}
 @media (min-width: 768px) {
   .contactWrap {
     width: 80%;
