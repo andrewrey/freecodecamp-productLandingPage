@@ -97,6 +97,10 @@ h1 {
   padding-top: 20px;
 }
 
+section {
+  margin-bottom: 30px;
+}
+
 .videoWrap {
   position: relative;
   width: 60%;
@@ -330,6 +334,22 @@ iframe {
 }
 .module p {
   margin-bottom: 5px;
+}
+
+.contactWrap {
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .contactWrap {
+    width: 80%;
+  }
+}
+.contactWrap #form {
+  text-align: center;
+}
+.contactWrap #form #submit {
+  display: block;
+  margin: 25px auto;
 }
 
 /* ============================================= */
